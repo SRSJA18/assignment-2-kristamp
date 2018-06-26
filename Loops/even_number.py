@@ -5,10 +5,13 @@
 # Don't let them stop until they enter an even number! Print a congratulatory message when they *finally* get it
 
 # This line will ask the user for an even number.
-number = input("Enter an even number?")
+number = eval(input("Enter an even number?"))
 
 # 1. create while a loop (What will the condition be?)
+while number % 2!=0:
 
-# 2. Inside the while loop What will you need to do? Don't forget to tab in!
-
+    # 2. Inside the while loop What will you need to do? Don't forget to tab in!
+    print ("go again")
 # 3. Once the user has entered an even number, congratulate them!
+while number % 2==0:
+    print ("congrats")
